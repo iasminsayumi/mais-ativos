@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f7faf7;
+color: #2f3d32;
+}
+
+.container {
+width: 100%;
+max-width: 650px;
+margin: auto;
+padding: 30px 22px;
+}
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 200px;
+    max-width: 45%;
+    height: auto;
+}
+
+.logo span {
+font-size: 38px;
+}
+
+/* BOAS-VINDAS */
+
+.boas-vindas {
+text-align: center;
+margin-bottom: 45px;
+}
+
+.icone-principal {
+width: 75px;
+height: 75px;
+
+margin: 0 auto 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #e5f2e8;
+border-radius: 50%;
+font-size: 35px;
+
+}
+
+.boas-vindas h1 {
+font-size: 30px;
+margin-bottom: 15px;
+color: #285c3b;
+}
+
+.boas-vindas p {
+font-size: 20px;
+line-height: 1.5;
+}
+
+.descricao {
+margin-top: 18px;
+font-size: 17px !important;
+color: #647068;
+}
+
+/* BOTÃO VOLTAR */
+
+.voltar {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 14px 22px;
+    background-color: #ffffff;
+    color: #2f6b46;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 18px;
+
+    box-shadow:
+        0 4px 0 #d5e2d9,
+        0 7px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    transform: translateY(-2px);
+    background-color: #eef7f0;
+}
+
+.voltar:active {
+    transform: translateY(3px);
+    box-shadow:
+        0 2px 0 #d5e2d9,
+        0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* PÁGINA DE EXERCÍCIOS */
+
+.pagina h1 {
+    margin-bottom: 12px;
+}
+
+.pagina .introducao {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.opcoes-exercicios {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.opcoes-exercicios .botao {
+    margin-bottom: 0;
+}
+
+.aviso {
+    margin-top: 32px;
+    line-height: 1.5;
+}
+
+/* MENU */
+
+.menu h2 {
+font-size: 21px;
+margin-bottom: 22px;
+text-align: center;
+color: #355540;
+}
+
+.botao {
+width: 100%;
+
+display: flex;
+align-items: center;
+margin-bottom: 16px;
+padding: 22px 20px;
+border: none;
+border-radius: 22px;
+background-color: #ffffff;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+font-size: 21px;
+font-weight: bold;
+color: #315c40;
+cursor: pointer;
+transition: 0.2s;
+
+}
+
+.botao:hover {
+transform: translateY(-2px);
+background-color: #eef7f0;
+}
+
+.icone {
+margin-right: 18px;
+font-size: 27px;
+}
+
+.seta {
+margin-left: auto;
+font-size: 32px;
+color: #4f8a63;
+}
+
+/* RODAPÉ */
+
+footer {
+margin-top: 40px;
+text-align: center;
+}
+
+footer p {
+font-size: 14px;
+color: #758078;
+}
+
+/* CELULARES MENORES */
+
+@media (max-width: 400px) {
+
+.container {
+    padding: 25px 16px;
+}
+.boas-vindas h1 {
+    font-size: 26px;
+}
+.boas-vindas p {
+    font-size: 18px;
+}
+.botao {
+    font-size: 19px;
+}
+
+}
+
+/* AJUSTES PARA CELULAR */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    .logo img {
+        width: 180px;
+        max-width: 60%;
+    }
+
+    .boas-vindas {
+        margin-bottom: 35px;
+    }
+
+    .boas-vindas h1 {
+        font-size: 27px;
+    }
+
+    .boas-vindas p {
+        font-size: 18px;
+    }
+
+    .descricao {
+        font-size: 16px !important;
+    }
+
+    .menu h2 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .botao {
+        min-height: 68px;
+        padding: 18px 18px;
+        font-size: 19px;
+    }
+
+    .icone {
+        font-size: 25px;
+        margin-right: 15px;
+    }
+
+    .seta {
+        font-size: 30px;
+    }
+
+    .voltar {
+        font-size: 17px;
+        padding: 13px 18px;
+    }
+
+    .pagina h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .pagina .introducao {
+        font-size: 18px;
+    }
+
+    .aviso {
+        font-size: 17px;
+    }
+
+    .aviso p {
+        font-size: 16px;
+    }
+}
